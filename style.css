@@ -5,6 +5,7 @@ body {
     margin: 20px;
 }
 .container {
+    min-width: 30%;
     text-align: center;
     width: 15%;
     background-color: aquamarine;
@@ -15,4 +16,10 @@ body {
     width: 98%;
     border-radius: 7px;
     background-color: aqua;
+}
+.i-1 {
+
+}
+.b-1 {
+    margin-top: 50px;
 }
