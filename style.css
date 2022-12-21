@@ -3,7 +3,7 @@ html, body {
 }
 body {
     margin: 20px;
-    background: #000;
+
 }
 .container {
     margin: 0 auto;
@@ -19,14 +19,39 @@ body {
     border-radius: 7px;
     background-color: aqua;
 }
-/*
+
 .i-1 {
-   
+    border-radius: 15px;
 }
-*/
+
 .i-2 {
     margin: 0 35px;
+    border-radius: 15px;
 }
 .b-2 {
     margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px 50px;
+    background: #f70340;
+    color: #fff;
+}
+.result {
+    
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #2A9FD6;
+    border-radius: 15px;
+    color: #fff;
+}
+.image {
+
+}
+.order-count {
+
+}
+.min-price {
+
+}
+.max-price {
+
 }
