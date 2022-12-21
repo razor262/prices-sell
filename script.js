@@ -16,7 +16,7 @@ function f1() {
   console.log(currentSelect)
   i1.value = ''
 
-  fetch("https://evepraisal.com/item/venture.json")
+  fetch(`https://evepraisal.com/item/${currentSelect}.json`)
   .then(function (resp) {
     return resp.json();
   })
