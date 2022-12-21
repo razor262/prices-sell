@@ -1,20 +1,47 @@
-// task 1 --------------------
-/*
-let a = 4
 
-if (a === 4) {
-    console.log('work')
-}*/
-//fetch('http://api.openweathermap.org/data/2.5/weather?q=Krasnodar,ru&appid=4ca848bb82776e391cc1309aca8f5bfd')
 let i1 = document.querySelector('.i-1')
+let i2 = document.querySelector('.i-2')
+let nameSistem1 = document.querySelector('.result')
+let minPrice = document.querySelector('.min-price')
+let maxPrice = document.querySelector('.max-price')
+let orderCount = document.querySelector('.order-count')
+let image = document.querySelector('.image')
 
-let b1 = document.querySelector('.b-1')
-b1.onclick = f1
+let b2 = document.querySelector('.b-2')
+b2.onclick = f1 
 
 function f1() {
   let currentSelect = i1.value
   console.log(currentSelect)
+  image.innerHTML = `<img  src="img/${currentSelect}.png">`
   i1.value = ''
+
+  let currentSistem = i2.value
+  console.log(currentSistem)
+  i2.value = ''
+
+  if (currentSistem == 'Jita') {
+    currentSistem = '0'
+  }
+  else if (currentSistem == 'Perimeter') {
+    currentSistem = '1'
+  }
+  else if (currentSistem == 'Universe') {
+    currentSistem = '2'
+  }
+  else if (currentSistem == 'Amarr') {
+    currentSistem = '3'
+  }
+  else if (currentSistem == 'Dodixie') {
+    currentSistem = '4'
+  }
+  else if (currentSistem == 'Hek') {
+    currentSistem = '5'
+  }
+  else if (currentSistem == 'Rens') {
+    currentSistem = '6'
+  }
+
 
   fetch(`https://evepraisal.com/item/${currentSelect}.json`)
   .then(function (resp) {
@@ -29,16 +56,59 @@ function f1() {
     for (const key in object) {
         
         element = object[key]
+       // console.log(object[0])
 
-        console.log(element)
-        console.log(element.market_display_name)
-    }
-   
- 
-    /*
-    console.log(' Покупка ' + data.totals.buy)
-    console.log(' Продажа ' + data.totals.sell)
-    */
+
+      }
+      if (currentSistem == '0') {
+        console.log(object[0])
+        nameSistem1.textContent = ' СИСТЕМА ' + object[0].market_display_name
+        minPrice.textContent = ' минимальная цена ' + object[0].prices.sell.min
+        maxPrice.textContent = ' максимальная цена ' + object[0].prices.sell.max
+        orderCount.textContent = ' предложений ' + object[0].prices.sell.order_count
+      }
+      else if (currentSistem == '1') {
+        console.log(object[1])
+        nameSistem1.textContent = ' СИСТЕМА ' + object[1].market_display_name
+        minPrice.textContent = ' минимальная цена ' + object[1].prices.sell.min
+        maxPrice.textContent = ' максимальная цена ' + object[1].prices.sell.max
+        orderCount.textContent = ' предложений ' + object[1].prices.sell.order_count
+      }
+      else if (currentSistem == '2') {
+        console.log(object[2])
+        nameSistem1.textContent = ' СИСТЕМА ' + object[2].market_display_name
+        minPrice.textContent = ' минимальная цена ' + object[2].prices.sell.min
+        maxPrice.textContent = ' максимальная цена ' + object[2].prices.sell.max
+        orderCount.textContent = ' предложений ' + object[2].prices.sell.order_count
+      }
+      else if (currentSistem == '3') {
+        console.log(object[3])
+        nameSistem1.textContent = ' СИСТЕМА ' + object[3].market_display_name
+        minPrice.textContent = ' минимальная цена ' + object[3].prices.sell.min
+        maxPrice.textContent = ' максимальная цена ' + object[3].prices.sell.max
+        orderCount.textContent = ' предложений ' + object[3].prices.sell.order_count
+      }
+      else if (currentSistem == '4') {
+        console.log(object[4])
+        nameSistem1.textContent = ' СИСТЕМА ' + object[4].market_display_name
+        minPrice.textContent = ' минимальная цена ' + object[4].prices.sell.min
+        maxPrice.textContent = ' максимальная цена ' + object[4].prices.sell.max
+        orderCount.textContent = ' предложений ' + object[4].prices.sell.order_count
+      }
+      else if (currentSistem == '5') {
+        console.log(object[5])
+        nameSistem1.textContent = ' СИСТЕМА ' + object[5].market_display_name
+        minPrice.textContent = ' минимальная цена ' + object[5].prices.sell.min
+        maxPrice.textContent = ' максимальная цена ' + object[5].prices.sell.max
+        orderCount.textContent = ' предложений ' + object[5].prices.sell.order_count
+      }
+      else if (currentSistem == '6') {
+        console.log(object[6])
+        nameSistem1.textContent = ' СИСТЕМА ' + object[6].market_display_name
+        minPrice.textContent = ' минимальная цена ' + object[6].prices.sell.min
+        maxPrice.textContent = ' максимальная цена ' + object[6].prices.sell.max
+        orderCount.textContent = ' предложений ' + object[6].prices.sell.order_count
+      }
   });
 }
 
