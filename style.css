@@ -3,16 +3,33 @@ html, body {
 }
 body {
     margin: 20px;
-
+    background: #232428;
+    
 }
 .container {
+    opacity: 0.9;
     margin: 0 auto;
-    min-width: 300px;
+    max-width: 300px;
     text-align: center;
-    width: 15%;
-    background-color: aquamarine;
+    
+    background-color: #222124;
     border-radius: 15px;
     padding: 15px;
+}
+.ship {
+    color: #fff;
+}
+.text {
+    color: #fff;
+}
+.order-count {
+    color: #fff;
+}
+.min-price {
+    color: #fff;
+}
+.max-price {
+    color: #fff;
 }
 .button-primary {
     width: 98%;
