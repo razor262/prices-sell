@@ -11,3 +11,4 @@ https://lucent-mousse-b2c860.netlify.app
 2 колличество предложений
 3 минимальная цена
 4 максимальная цена
+![astero (1)](https://user-images.githubusercontent.com/34629679/209135053-5a671eef-6fa7-4da6-84aa-2e2f8238f864.jpg)
