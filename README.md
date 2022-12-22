@@ -1,6 +1,7 @@
 # prices-sell
 
-![astero (1)](https://user-images.githubusercontent.com/34629679/209135053-5a671eef-6fa7-4da6-84aa-2e2f8238f864.jpg)
+![astero (1) (1)](https://user-images.githubusercontent.com/34629679/209135486-7770da44-afcb-4f7c-8484-8d081068314c.jpg)
+
 
 Это небольшой сервис для просмотра текущих цен в онлайн игре EVE ONLINE
 В данном проекте реализована работа с API
