@@ -8,6 +8,7 @@ body {
 }
 .titles {
     color: #fff;
+    text-align: center;
 }
 .container {
     opacity: 0.9;
