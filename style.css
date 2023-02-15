@@ -6,6 +6,9 @@ body {
     background: #232428;
     
 }
+h1 {
+    color: #fff;
+}
 .container {
     opacity: 0.9;
     margin: 0 auto;
